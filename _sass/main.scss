@@ -1,0 +1,122 @@
+---
+---
+
+html, body, .text, .testname, .center-qnl, u, p, span{
+  font-family: century-old-style-std, heisei-mincho-stdn, a-otf-futo-min-a101-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 2;
+}
+
+/* Typo */
+.subject {
+  font-family: century-old-style-std, a-otf-futo-go-b101-pr6n, sans-serif;
+}
+.gothic, .front-caution {
+  font-family: century-old-style-std, heisei-kaku-gothic-stdn, sans-serif !important;
+}
+
+/* Main */
+.center-qnb {
+  font-family: a-otf-futo-go-b101-pr6n, sans-serif;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 2px solid #000;
+}
+.center-qnb-d {
+  font-family: a-otf-futo-go-b101-pr6n, sans-serif;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 2px double #000;
+}
+.center-qnl {
+  font-family: heisei-mincho-stdn, a-otf-futo-min-a101-pr6n, sans-serif;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border: 1px solid #000;
+}
+.center-qnl-d {
+  font-family: heisei-mincho-stdn, a-otf-futo-min-a101-pr6n, sans-serif;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  border: 1px double #000;
+}
+.centered {
+  text-align: center;
+}
+.change-page {
+  page-break-before: always;
+}
+.text {
+   text-indent: 1em;
+}
+
+/* Front */
+.front-caution {
+  padding: 0.3em;
+  border: 1px solid #000;
+  font-size: 9px;
+}
+.testname {
+  font-size: 0.9em;
+}
+.subject {
+  font-size: 2em;
+  line-height: 0;
+}
+.small.subject {
+  font-size: 1.3em;
+  line-height: 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Question */
+.question-code{
+  font-size: 1.3em;
+}
+
+/* Math-frac */
+table.BunsuTbl{        /* 分数を左詰で表示する定義 */
+  margin-left:0;
+  margin-right:auto;
+}
+.BnsArea{
+  text-align:left;
+  margin-left:10px;
+}
+.Bunsu,.Seisu,.Bunshi,.Bunbo{    /* 分数、整数、分子、分母 */
+  font-size:15px;
+  color:#123d12;
+  text-align:center;
+  line-height:20px;
+  padding:2px 5px 2px 5px;
+}
+.Bunsu,.Seisu{    /* 分数、整数 */
+  margin:0;
+  display:inline-block;
+}
+.Seisu{        /* 整数 */
+  padding-top:0px;
+  vertical-align:middle;
+}
+.Bunshi {    /* 分子 */
+  border-style:solid;
+  border-width:0px 0px 1px 0px;
+  border-color:black;
+  padding-bottom:0px;
+}
+
+/* Print Settings */
+@page {
+  margin: 80px;
+  size: portrait; //縦向き
+}

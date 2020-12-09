@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<section id="frontpage">
+  <p>
+    <span class="front-caution">試験開始の合図があるまで，この問題冊子の中を見てはいけません。</span>
+  </p>
+  <div class="centered">
+    <h3 class="testname">{{page.title}}</h3>
+    <div class="row">
+      <h1 class="subject row-inside">{{page.subject}}</h1>
+      <h1 class="small subject row-inside">{{page.subt}}</h1>
+    </div>
+    <h3 class="testname">{{page.type}}</h3>
+  </div>
+  <p class="gothic">注意事項</p>
+  <div class="text">
+    <ol>
+      <li>
+      答案用紙に，正しく記入・マークされていない場合は，採点できないことがあります。特に，解答用紙の解答科目欄にマークされていない場合又は複数の科目にマークされている場合は，0点となります。<br>ただし，出願時にドイツ語，フランス語，中国語及び韓国語の問題冊子の配付を希望しなかった者は英語として採点します。
+      </li>
+      <li>
+      この問題冊子は，30ページあります。<br>試験中に問題冊子の印刷不鮮明，ページの落丁・乱丁及び解答用紙の汚れ等に気付いた場合は，手を高く挙げて監督者に知らせなさい。
+      </li>
+      {% if page.marktype == 'other' or page.marktype == nil %}
+        <li>
+          解答は，解答用紙の問題番号に対応した解答欄にマークしなさい。例えば，<span class="center-qnb">10</span>と表示のある問いに対して<span class="icon-m3"></span>と解答する場合は，解答番号<span class="center-qnb">10</span>の解答欄に，次の（例）のようにマークしなさい。
+        </li>
+        <div style="text-align:center;">
+        <img src="/assets/images/other.svg" width="300px">
+        </div>
+      {% elsif page.marktype == 'science2' %}
+        <li>
+          解答は，解答用紙の問題番号に対応した解答欄にマークしなさい。例えば，<span class="gothic">第２問</span>の<span class="center-qnb">1</span>と表示のある問いに対して<span class="icon-m3"></span>と解答する場合は，次の（例）のように解答番号<span class="center-qnb">10</span>の解答欄に，次のように問題番号<span class="center-qnl">2</span>の<span class="gothic">解答番号１</span>の<span class="gothic">解答欄</span>の<span class="icon-m3"></span>に<span class="gothic">マーク</span>しなさい。
+          <br>
+          <div style="text-align:center;">
+          <img src="/assets/images/science2.svg" width="300px">
+          </div>
+        </li>
+      {% endif %}
+      <li>問題冊子の余白等は適宜使用してよいが，どのページも切り離してはいけません。</li>
+      <li><span class="gothic">不正行為について</span>
+        <ol>
+          <li>不正行為に対しては厳正に対処します。</li>
+          <li>不正行為に見えるような行為が見受けられた場合は，監督者がカードを用いて注意します。</li>
+          <li>不正行為を行った場合は，その時点で受験を取りやめさせ退室させます。</li>
+        </ol>
+      </li>
+      <li>試験終了後，問題冊子は持ち帰りなさい。</li>
+    </ol>
+  </div>
+</section>
+<div class="change-page"></div>
+{{ content }}

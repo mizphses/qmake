@@ -1,0 +1,40 @@
+title: Qmake
+email: fuminori@educity.asia
+description: >- # this means to ignore newlines until "baseurl:"
+  Qmakeはオンラインテスト問題組版システムです。Jekyll（バックエンドCMS）を流用して作ってます。
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://qmake.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: mizphses
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-haml-improved
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /:categories/:title.html
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
